@@ -1,0 +1,323 @@
+
+body{
+	font-family:'Poppins'; /*Letra de GoogleFonts*/
+	margin:0%;     /*El margin es del "borde hacia fuera y puede ser negativo"*/
+	padding: 0%;   /*El padding es del borde hacia dentro*/
+	/*Así se ajustan los cuatro lados del contenedor */
+}
+.acces{
+	margin-top: 8%; /*La diferencia es que así solo se modifica el margen superior, no los cuatro*/
+}
+.imagen{
+	position: absolute; /*Si tiene posición absoluta dejará de "ser tomado en cuenta" por los componentes con posisicón relativa*/
+	padding: 15%;
+	bottom: 0%;
+	right:0%;
+	margin-top: 0%
+	/*min-height: 85px;*/
+}
+.imagen img{
+	position: absolute;
+	margin-bottom:  2%;
+	padding-bottom: 1%;
+	right:2%;        /*Posición a partir de la derecha*/
+}
+p{
+	font-size: 130%; /*Cambia tamaño de letra*/
+} 
+.menu p{
+	color: white; /*Cambia el color de lo que contenga, en este caso texto.*/
+}
+li{
+	list-style: none;  /*Por defecto las listas muestran una acotación para cada item, con esto se elimina ese puntito */
+	padding-right: 20px;
+	color: #DFFDDC;
+}
+.menu{
+	display: flex; /*Por defecto los componentes se ponen uno bajo otro, esto hace que se coloquen a un lado*/
+	justify-content: space-between; /*Espacio entre ambos componentes*/
+	align-items: center; /*para alinear todo lo que está en Menu*/
+}
+ul{
+	display: flex; 
+}
+
+a{
+	text-decoration: underline; 
+	color: black;
+	font-size: 14px;
+	background: #8CE891 ;
+	padding: 20px 30px 20px 30px; 
+	transition: 1s; /*El tiempo que toma en volver a su color*/
+
+}
+a:hover{ /*Cuando se pasa el cursor por arriba, el hover dice que se hace*/
+	color:#1AC223;
+	transition: 1s;
+}
+
+.titular_encabezado{
+	text-align: center;
+	margin-top: 200px;
+
+}
+
+h1{
+	font-size: 60px;
+	margin:0;
+}
+
+h2{
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+
+.PalFondo{
+	background: #B7F7C5;
+	margin-bottom:0%;
+	padding-bottom: .01%;
+}
+
+header{
+	background: url(images/FondoPcb2.png);
+	height: 100vh; /*Viewheight* viewport= ventana navegador - porcentaje de altura de pantalla*/
+	background-size: cover;
+	color: #DFFDDC;
+}
+.contenedor{ /*3 propiedades de siempre para el contenedor*/
+	padding: 0%;
+	max-width: 1280px;
+	width: 95%;
+	margin: auto;
+	margin-bottom: .1%;
+}
+
+/*Empieza SeccionSobreNosotros*/
+.titulos{
+	font-family: 'Modak', cursive;
+}
+h3{
+	text-align: center;
+	font-size: 45px;
+	font-weight: normal; /*Para el grosor de la letra*/
+}
+
+.contenedor_july{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contenedor_parrafoboton{
+	width: 42%
+}
+.contenedor_parrafoboton p{
+	font-size: 16px;
+}
+.contenedor_serv{
+	display: flex;
+	flex-wrap: wrap; /*Encapsula*/
+	justify-content: space-around;
+}
+.servicio{
+	position: relative;
+	/*height: 80vh;*/
+	width: 25%; 
+	padding: 50px 35px 50px 35px;
+	border-radius: 10px; 
+	margin-bottom: 40px;
+	color: white;
+}
+h4{
+	text-align: center;
+
+}
+.oscuro{
+	background: #145A32 ;
+}
+.suave{
+	background: #1E8449;
+}
+.servicio h4{
+	font-size: 30px;
+	color:#FCF3CF ;
+	margin: 0;
+}
+.servicio img{
+	/*position:absolute;*/
+	
+	/*float:right;*/
+
+}
+.servicio p{
+	font-size: 16px;
+}
+span{
+	font-size: 400%;
+	color: #1E8449;
+}
+.owl-nav{
+	text-align: center;
+
+}
+.contenedor_razones{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+
+
+}
+.contenedor_razones h4{
+	margin:0; 
+	font-size: 20px;
+
+}
+.contenedor_razones p{
+	font-size: 16px;
+	line-height: 26px
+
+}
+.razon{
+	width: 30%;
+	margin-bottom: 5%;
+}
+#blog{
+	background: #EAE9EE;
+	padding-top: .01%;
+	padding-bottom: 3%;
+	margin-top: 0%;
+}
+.contenedor_pubs{
+	display: flex;
+	justify-content: space-around;
+}
+.publicacion{
+	width: 30%;
+	box-shadow: 1px 1px 14px #ccc;
+	padding-bottom: 20px;
+}
+#blog img { /*Para que las imagenes del blog ocupen el 100% del espacio*/
+	width: 100%;
+}
+#blog h4{
+	font-size: 23px;
+	margin:0;
+	padding: 20px;
+}
+#blog p{
+	color: #5A6169;
+	line-height: 24px;
+	font-size: 16px;
+	padding: 10px 20px 20px 20px;
+	margin: 0;
+}
+#blog a{
+	display: inline-block;
+	margin-left: 20px;
+}
+.segunda img{
+	height: 269px;
+}
+.segunda a{
+	margin-top: 20px;
+}
+#juega{
+	background: linear-gradient(rgba(84,93,220,.94),rgba(96,171,245,.9));
+	text-align: center;
+	padding: 50px 0 50px 0;
+
+}
+.carrusel{
+	margin-bottom: 0%;
+	padding-bottom: .1%;
+}
+.razones{
+	margin-top: -3%;
+	padding-top: 0%;
+}
+#juega h3{
+	font-size: 23px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+#juega a{
+	padding: 15px 45px 15px 45px;
+	transition: 1s;
+}
+#juega a:hover{  /*Todo lo que se pone adentro es lo que 
+	pasa cuando el mouse pasa por encima del botón*/
+	transition: 1s;
+	transform: rotate(360deg);
+	display: inline-block;
+}
+#whats a{
+	background: none;
+	position: fixed;  /*Para darle posicion fija*/
+	top: 85%; /*Porcentaje en la pantalla hacia abajo*/
+	right: .1%;/*Porcentaje desde la derecha*/
+}
+.menu-icon{
+	display: none;
+}
+
+@media (max-width: 480px) and (min-width: 1px){
+	/*Se aplicará cuando el máximo de ancho 480 px, el otro es solo para hacerle a ala mamada y acordarme de como se pone el and jaja*/
+	nav{
+		position: absolute;
+		top:70px;
+		left: 0px;
+		background: #5cb8ff;
+		width: 100%;
+		display: none;
+
+	}
+ 	nav .lista {
+		flex-direction: column;
+		display: flex;
+	}
+	.menu-icon{
+		display: block;
+		width: 25px;  
+	}
+	.titular_encabezado{
+		margin-top:54px;
+	}
+	h1{
+		font-size: 49px;
+	}
+	h2{
+		font-size: 19px;
+	}
+	.contenedor_july{
+		flex-direction: column;
+	}
+	.contenedor_parrafoboton{
+		width: 90%;
+	}
+	.contenedor_serv{
+		flex-direction: column;
+	}
+	.servicio{
+		width: 72%;
+		margin:auto;
+		margin-bottom: 15px;
+		color: white;
+	}
+	h3{
+		font-size: 46px;
+	}
+	.contenedor_razones{
+		flex-direction: column;
+	}
+	.razon{
+		width: 87%;
+		margin: auto;
+	}
+	.contenedor_pubs{
+		flex-direction: column;
+
+	}
+	.publicacion{
+		width: 85%;
+		margin: auto;
+	}
+}
